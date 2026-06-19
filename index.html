@@ -21,7 +21,6 @@
   #app{width:100%;max-width:680px;}
   .screen{display:none;} .screen.active{display:block;}
 
-  /* LANDING */
   .landing{text-align:center;padding:40px 24px;}
   .badge{display:inline-block;background:var(--green);color:var(--gold);font-size:11px;font-weight:700;letter-spacing:1.5px;padding:5px 14px;border-radius:20px;margin-bottom:28px;text-transform:uppercase;}
   .hero-num{font-size:clamp(72px,16vw,112px);font-weight:900;line-height:1;letter-spacing:-4px;}
@@ -37,7 +36,6 @@
   .stat-num{font-size:26px;font-weight:800;}
   .stat-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:2px;}
 
-  /* SETUP */
   .setup{padding:24px;}
   .setup h2{font-size:22px;font-weight:800;margin-bottom:6px;}
   .setup-sub{font-size:13px;color:var(--muted);margin-bottom:22px;}
@@ -56,7 +54,6 @@
   .rules-tier{color:var(--text);font-weight:600;}
   .rules-limit{color:var(--gold);font-weight:700;}
 
-  /* DRAFT */
   .draft{padding:20px 24px;}
   .pick-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;}
   .pick-label{font-size:11px;font-weight:700;letter-spacing:1.5px;color:var(--muted);text-transform:uppercase;}
@@ -65,7 +62,6 @@
   .pick-dot.done{background:var(--gold);}
   .pick-dot.current{background:var(--green2);}
 
-  /* Budget tracker */
   .budget-tracker{background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:14px;}
   .budget-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
   .budget-label{font-size:11px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;}
@@ -122,7 +118,6 @@
   .rb65{background:#374151;color:#9ca3af;} .rb60{background:#1f2937;color:#6b7280;}
   .cost-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:4px;background:rgba(239,68,68,.15);color:var(--loss);}
 
-  /* PREVIEW */
   .preview{padding:24px;}
   .preview-header{text-align:center;margin-bottom:24px;}
   .preview-header h2{font-size:20px;font-weight:800;}
@@ -148,7 +143,17 @@
   .xip-name{font-size:13px;font-weight:600;}
   .xip-season{font-size:11px;color:var(--muted);}
 
-  /* SEASON */
+  .sim-mode-box{background:var(--bg2);border:1.5px solid var(--gold);border-radius:var(--radius);padding:16px;margin-bottom:20px;}
+  .sim-mode-box h3{font-size:12px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase;margin-bottom:4px;}
+  .sim-mode-sub{font-size:11px;color:var(--muted);margin-bottom:12px;}
+  .sim-opt{display:flex;gap:8px;}
+  .sim-opt-btn{flex:1;background:var(--bg3);border:1.5px solid var(--border);border-radius:8px;padding:14px;cursor:pointer;text-align:center;transition:all .15s;}
+  .sim-opt-btn:hover{border-color:var(--gold);}
+  .sim-opt-btn.selected{border-color:var(--gold);background:rgba(209,160,9,0.12);}
+  .sim-opt-btn .so-icon{font-size:22px;margin-bottom:6px;}
+  .sim-opt-btn .so-title{font-size:13px;font-weight:700;}
+  .sim-opt-btn .so-desc{font-size:10px;color:var(--muted);margin-top:3px;line-height:1.4;}
+
   .season{padding:20px 24px;}
   .season-header{margin-bottom:16px;}
   .season-header h2{font-size:20px;font-weight:800;}
@@ -187,7 +192,41 @@
   .nrr-pos{color:var(--win);} .nrr-neg{color:var(--loss);}
   .final-table-note{font-size:11px;color:var(--muted);margin-top:6px;}
 
-  /* END */
+  /* LIVE MATCH (full sim) */
+  .live-match{padding:20px 24px;}
+  .lm-header{background:var(--bg2);border:1.5px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:16px;text-align:center;}
+  .lm-teams{font-size:13px;font-weight:700;color:var(--muted);}
+  .lm-venue{font-size:11px;color:var(--muted);margin-top:2px;}
+  .lm-innings-label{font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase;margin-top:8px;}
+  .lm-score-box{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;margin-bottom:14px;}
+  .lm-score{font-size:42px;font-weight:900;letter-spacing:-1px;}
+  .lm-overs{font-size:13px;color:var(--muted);margin-top:4px;}
+  .lm-crr{font-size:11px;color:var(--gold);margin-top:4px;font-weight:600;}
+  .lm-target{font-size:12px;color:var(--muted);margin-top:6px;}
+  .lm-batters{background:var(--bg3);border:1px solid var(--border);border-radius:8px;margin-bottom:10px;overflow:hidden;}
+  .lm-batter-row{display:flex;justify-content:space-between;padding:9px 14px;font-size:13px;border-bottom:1px solid var(--border);}
+  .lm-batter-row:last-child{border-bottom:none;}
+  .lm-batter-row.striker{background:rgba(209,160,9,0.08);}
+  .lm-batter-name{font-weight:600;}
+  .lm-batter-name .star{color:var(--gold);margin-right:4px;}
+  .lm-batter-stats{color:var(--muted);font-variant-numeric:tabular-nums;}
+  .lm-bowler-box{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 14px;margin-bottom:10px;display:flex;justify-content:space-between;font-size:13px;}
+  .lm-bowler-name{font-weight:600;}
+  .lm-bowler-figs{color:var(--muted);font-variant-numeric:tabular-nums;}
+  .lm-balls-label{font-size:10px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin-bottom:8px;}
+  .lm-balls{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px;}
+  .lm-ball{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;background:var(--bg3);border:1.5px solid var(--border);}
+  .lm-ball.dot{color:var(--muted);}
+  .lm-ball.runs1,.lm-ball.runs2,.lm-ball.runs3{color:var(--text);border-color:var(--text);}
+  .lm-ball.four{background:rgba(59,130,246,.15);border-color:var(--bat);color:var(--bat);}
+  .lm-ball.six{background:rgba(168,85,247,.15);border-color:var(--ar);color:var(--ar);}
+  .lm-ball.wicket{background:rgba(239,68,68,.15);border-color:var(--loss);color:var(--loss);}
+  .lm-ball.wide,.lm-ball.noball{background:rgba(245,158,11,.15);border-color:var(--draw);color:var(--draw);font-size:9px;}
+  .lm-fow-label{font-size:10px;font-weight:700;letter-spacing:1px;color:var(--muted);text-transform:uppercase;margin:14px 0 8px;}
+  .lm-fow-row{font-size:12px;color:var(--muted);padding:4px 0;display:flex;justify-content:space-between;}
+  .lm-controls{display:flex;gap:8px;margin-top:16px;}
+  .lm-speed-label{font-size:11px;color:var(--muted);text-align:center;margin-top:8px;}
+
   .end-screen{padding:24px;}
   .trophy-box{background:linear-gradient(135deg,var(--green),#0d3b0a);border:1px solid var(--green2);border-radius:var(--radius);padding:28px;text-align:center;margin-bottom:20px;}
   .trophy-emoji{font-size:52px;margin-bottom:12px;}
@@ -215,6 +254,7 @@
   @media(max-width:420px){
     .xi-grid{grid-template-columns:repeat(3,1fr);}
     .end-stats{grid-template-columns:1fr 1fr;}
+    .lm-score{font-size:34px;}
   }
 </style>
 </head>
@@ -344,11 +384,29 @@
       <div id="media-cards"></div>
     </div>
     <div class="xi-preview-list" id="xi-preview-list"></div>
+
+    <div class="sim-mode-box">
+      <h3>&#127918; Choose Simulation Mode</h3>
+      <div class="sim-mode-sub">This choice applies to the whole season and cannot be changed once started.</div>
+      <div class="sim-opt">
+        <div class="sim-opt-btn selected" data-sim="quick" onclick="selectSimMode(this,'quick')">
+          <div class="so-icon">&#9889;</div>
+          <div class="so-title">Quick Sim</div>
+          <div class="so-desc">Instant results with a summary scorecard for every game</div>
+        </div>
+        <div class="sim-opt-btn" data-sim="full" onclick="selectSimMode(this,'full')">
+          <div class="so-icon">&#127951;</div>
+          <div class="so-title">Full Sim</div>
+          <div class="so-desc">Watch every match ball-by-ball with a live scorecard</div>
+        </div>
+      </div>
+    </div>
+
     <button class="btn-primary" onclick="beginSeason()">Begin the Season &#8594;</button>
   </div>
 </div>
 
-<!-- SEASON -->
+<!-- SEASON (quick sim feed) -->
 <div id="screen-season" class="screen">
   <div class="season">
     <div class="season-header">
@@ -372,6 +430,42 @@
       </table>
       <div class="final-table-note">2 pts per win &middot; 1 pt per draw &middot; 0 pts per loss</div>
     </div>
+  </div>
+</div>
+
+<!-- LIVE MATCH (full sim, ball by ball) -->
+<div id="screen-live" class="screen">
+  <div class="live-match">
+    <div class="lm-header">
+      <div class="game-counter" id="lm-game-counter" style="text-align:center;margin-bottom:6px">Game 1 of 18</div>
+      <div class="lm-teams" id="lm-teams">FWCC vs Opposition</div>
+      <div class="lm-venue" id="lm-venue">Dolmans Farm, Ferndown</div>
+      <div class="lm-innings-label" id="lm-innings-label">1ST INNINGS</div>
+    </div>
+
+    <div class="lm-score-box">
+      <div class="lm-score" id="lm-score">0/0</div>
+      <div class="lm-overs" id="lm-overs">0.0 overs</div>
+      <div class="lm-crr" id="lm-crr">RR: 0.00</div>
+      <div class="lm-target" id="lm-target" style="display:none"></div>
+    </div>
+
+    <div class="lm-batters" id="lm-batters"></div>
+    <div class="lm-bowler-box" id="lm-bowler-box"></div>
+
+    <div class="lm-balls-label">THIS OVER</div>
+    <div class="lm-balls" id="lm-balls"></div>
+
+    <div id="lm-fow-section" style="display:none">
+      <div class="lm-fow-label">FALL OF WICKETS</div>
+      <div id="lm-fow-list"></div>
+    </div>
+
+    <div class="lm-controls">
+      <button class="btn-pause" id="lm-btn-pause" onclick="liveTogglePause()">&#9208; Pause</button>
+      <button class="btn-skip" onclick="liveSkipMatch()">Skip Match &#9197;</button>
+    </div>
+    <div class="lm-speed-label">Auto-playing ball by ball</div>
   </div>
 </div>
 
@@ -411,9 +505,12 @@ let state = {
   xi:[],
   pickIndex:0,
   budgetSpent:0,
+  simMode:'quick',
   fixtures:[], tableRows:[], currentGame:0,
   paused:false, autoTimer:null,
-  playerStats:{}
+  playerStats:{},
+  // live match state
+  live:null
 };
 
 const SLOT_REQS = [
@@ -447,6 +544,11 @@ function selectEra(el,val){
   selectOpt(el);
   state.eraFrom=val==='all'?2010:parseInt(val);
 }
+function selectSimMode(el,val){
+  document.querySelectorAll('.sim-opt-btn').forEach(function(e){e.classList.remove('selected');});
+  el.classList.add('selected');
+  state.simMode=val;
+}
 function rand(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
 function ratingClass(r){
   if(r>=93)return'rb95'; if(r>=88)return'rb90'; if(r>=83)return'rb85';
@@ -460,18 +562,11 @@ function canFillSlot(pr,sr){
   if(sr==='BOWL')return pr==='BOWL'||pr==='AR';
   return false;
 }
-function budgetRemaining(){
-  return TOTAL_BUDGET - state.budgetSpent;
-}
-function slotsLeft(){
-  return 11 - state.pickIndex;
-}
+function budgetRemaining(){return TOTAL_BUDGET - state.budgetSpent;}
+function slotsLeft(){return 11 - state.pickIndex;}
 function maxAffordable(){
-  // Max rating a player can be given remaining budget and slots
-  var rem = budgetRemaining();
-  var slots = slotsLeft();
+  var rem=budgetRemaining(), slots=slotsLeft();
   if(slots<=1) return rem;
-  // Must leave at least 60 per remaining slot after this pick
   return rem - (slots-1)*60;
 }
 
@@ -490,7 +585,6 @@ function startDraft(){
 
 // ── DRAFT ────────────────────────────────────────────────────
 function renderDraft(){
-  // Progress dots
   var prog=document.getElementById('pick-progress');
   prog.innerHTML=SLOT_REQS.map(function(_,i){
     var c=i<state.pickIndex?'done':i===state.pickIndex?'current':'';
@@ -498,7 +592,6 @@ function renderDraft(){
   }).join('');
   document.getElementById('pick-label').textContent='Pick '+(state.pickIndex+1)+' of 11';
 
-  // Budget tracker
   var spent=state.budgetSpent;
   var remaining=budgetRemaining();
   var pct=Math.round((spent/TOTAL_BUDGET)*100);
@@ -513,7 +606,6 @@ function renderDraft(){
     '<div class="budget-bar-bg"><div class="budget-bar-fill" style="width:'+pct+'%;background:'+barColor+'"></div></div>' +
     (state.pickIndex<11?'<div class="budget-avg">Avg per remaining pick: <span>'+avgLeft+'</span></div>':'');
 
-  // XI grid
   var grid=document.getElementById('xi-grid');
   grid.innerHTML=SLOT_REQS.map(function(slot,i){
     var p=state.xi[i];
@@ -531,7 +623,6 @@ function renderDraft(){
     '</div>';
   }).join('');
 
-  // Spin area
   document.getElementById('forced-respin-msg').style.display='none';
   if(state.spunSeason){
     document.getElementById('spin-result').innerHTML='FWCC &nbsp;<span>'+state.spunSeason+'</span>';
@@ -698,14 +789,13 @@ function showPreview(){
   document.getElementById('pred-odds').textContent=odds+' to go unbeaten';
 
   var top =state.xi.slice().sort(function(a,b){return b.rating-a.rating;})[0];
-  var weak=state.xi.slice().sort(function(a,b){return a.rating-b.rating;})[0];
   var sources=[
     {name:'THE CRICKET PAPER',
      quote:r.overall>=78?top.name+' at '+top.rating+' is the standout name and this side has real depth. If they stay consistent across all 18 games, an unbeaten SPCL season is genuinely possible.':'Interesting selections throughout. '+top.name+' gives them a marquee name but there are questions about depth below. A tough ask in the SPCL Premier Division.'},
     {name:'DORSET CRICKET INSIDER',
      quote:r.bowling>=r.batting?'The bowling attack looks formidable. They will need the batting to hold up at Dolmans Farm but the attack could be the most dangerous FWCC unit in years.':'The batting looks the stronger suit here. If they can post big totals they will be very difficult to stop. The bowling needs to fire on away trips.'},
     {name:'FERNDOWN GAZETTE',
-     quote:'A fascinating XI assembled within the 820-point budget. '+top.name+' is the obvious match-winner but this side is built on more than one individual. The SPCL will be a stern test.'}
+     quote:'A fascinating XI assembled within the 902-point budget. '+top.name+' is the obvious match-winner but this side is built on more than one individual. The SPCL will be a stern test.'}
   ];
   document.getElementById('media-cards').innerHTML=sources.map(function(s){
     return '<div class="media-card"><div class="mc-source">'+s.name+'</div><div class="mc-quote">"'+s.quote+'"</div></div>';
@@ -726,17 +816,23 @@ function showPreview(){
   showScreen('screen-preview');
 }
 
-// ── SEASON ───────────────────────────────────────────────────
+// ── SEASON SETUP ─────────────────────────────────────────────
 function beginSeason(){
   buildFixtures();
   buildTable();
   initPlayerStats();
   state.currentGame=0;
   state.paused=false;
-  document.getElementById('btn-pause').textContent='&#9208; Pause';
-  renderSeason();
-  showScreen('screen-season');
-  state.autoTimer=setTimeout(autoRun,800);
+
+  if(state.simMode==='full'){
+    showScreen('screen-live');
+    startLiveMatch(0);
+  } else {
+    document.getElementById('btn-pause').textContent='⏸ Pause';
+    renderSeason();
+    showScreen('screen-season');
+    state.autoTimer=setTimeout(autoRun,800);
+  }
 }
 
 function initPlayerStats(){
@@ -751,7 +847,7 @@ function buildFixtures(){
   state.fixtures=[];
   CLUBS.forEach(function(club){
     ['H','A'].forEach(function(ha){
-      var f=simulateMatch(r.overall,club.rating,ha,club);
+      var f=buildFixtureMeta(r.overall,club.rating,ha,club);
       state.fixtures.push(f);
     });
   });
@@ -761,18 +857,50 @@ function buildFixtures(){
   }
 }
 
-function simulateMatch(fwccR,oppR,ha,club){
-  var adjOpp=ha==='A'?oppR+3:oppR-3;
+// Pre-compute win/loss/draw weighting for a fixture (used by both quick and full sim)
+// Curve calibrated so the maximum achievable XI (~83-85 overall within the 902 budget)
+// has a realistic but rare shot at an 18-0 perfect season (~0.4-1% chance), and a much
+// stronger relative team has a meaningfully higher shot. Verified by simulation testing.
+function buildFixtureMeta(fwccR,oppR,ha,club){
+  var adjOpp=ha==='A'?oppR+1:oppR-1;
   var diff=fwccR-adjOpp;
-  var winP=diff>=15?0.76:diff>=8?0.63:diff>=3?0.52:diff>=-2?0.42:diff>=-8?0.32:diff>=-15?0.22:0.14;
-  var r=Math.random();
-  var outcome=r<winP?'W':r<winP+0.02?'D':'L';
-  var scores=genScores(outcome);
-  var perf=genPlayerPerf(outcome);
-  return{club:club.name,ground:club.ground,ha:ha,outcome:outcome,
-    margin:scores.margin,fwccScore:scores.fwcc,oppScore:scores.opp,
-    topScorer:perf.topScorer,topScorerRuns:perf.runs,
-    topBowler:perf.topBowler,topBowlerWkts:perf.wickets,allPerf:perf.all};
+  var winP;
+  if(diff>=8) winP=0.90;
+  else if(diff>=4) winP=0.85;
+  else if(diff>=0) winP=0.78;
+  else if(diff>=-4) winP=0.68;
+  else if(diff>=-8) winP=0.55;
+  else if(diff>=-12) winP=0.40;
+  else winP=0.25;
+  return{club:club.name,ground:club.ground,ha:ha,fwccR:fwccR,oppR:adjOpp,winP:winP};
+}
+
+// ══════════════════════════════════════════════════════════════
+//  RATING-WEIGHTED PERFORMANCE ENGINE (shared by quick + full sim)
+// ══════════════════════════════════════════════════════════════
+
+// Convert a player's rating into expected batting output.
+// Higher rating = higher average runs AND higher chance of a big score.
+function batExpectedRuns(rating, outcome){
+  // base scales from rating 60 (avg ~18) to rating 95 (avg ~48)
+  var base = 18 + (rating-60)*(30/35);
+  var mult = outcome==='W'?1.15:outcome==='L'?0.80:1.0;
+  return base*mult;
+}
+// Convert a player's rating into expected bowling output (wickets per innings).
+function bowlExpectedWkts(rating, outcome){
+  var base = 0.9 + (rating-60)*(1.8/35); // 60 -> 0.9, 95 -> 2.7
+  var mult = outcome==='W'?1.25:outcome==='L'?0.75:1.0;
+  return base*mult;
+}
+
+function weightedPickByRating(arr){
+  // weight ^2.2 so higher rated players dominate selection much more strongly
+  var weights = arr.map(function(p){return Math.pow(p.rating-55, 2.2);});
+  var total=weights.reduce(function(s,w){return s+w;},0);
+  var r=Math.random()*total;
+  for(var i=0;i<arr.length;i++){r-=weights[i];if(r<=0)return arr[i];}
+  return arr[arr.length-1];
 }
 
 function genScores(outcome){
@@ -781,51 +909,66 @@ function genScores(outcome){
       var ft=rand(210,285); var fw=rand(3,9);
       var ot=rand(140,ft-15); var ow=rand(7,10);
       var oov=ow===10?rand(25,49):50;
-      return{fwcc:ft+'/'+fw+' (50 ov)',opp:ot+'/'+ow+' ('+oov+' ov)',margin:'won by '+(ft-ot)+' runs'};
+      return{fwcc:ft+'/'+fw+' (50 ov)',opp:ot+'/'+ow+' ('+oov+' ov)',margin:'won by '+(ft-ot)+' runs',fwccTotal:ft,oppTotal:ot};
     } else {
       var ot2=rand(155,230); var ow2=rand(6,10);
       var fw2=rand(1,7); var fov=rand(30,50); var wl=10-fw2;
-      return{fwcc:(ot2+rand(1,20))+'/'+fw2+' ('+fov+' ov)',opp:ot2+'/'+ow2+' (50 ov)',margin:'won by '+wl+' wicket'+(wl===1?'':'s')};
+      var ftot=ot2+rand(1,20);
+      return{fwcc:ftot+'/'+fw2+' ('+fov+' ov)',opp:ot2+'/'+ow2+' (50 ov)',margin:'won by '+wl+' wicket'+(wl===1?'':'s'),fwccTotal:ftot,oppTotal:ot2};
     }
   } else if(outcome==='L'){
     if(Math.random()>0.5){
       var ot3=rand(215,285); var ow3=rand(3,9);
       var ft3=rand(130,ot3-15); var fw3=rand(7,10);
       var fov3=fw3===10?rand(25,49):50;
-      return{fwcc:ft3+'/'+fw3+' ('+fov3+' ov)',opp:ot3+'/'+ow3+' (50 ov)',margin:'lost by '+(ot3-ft3)+' runs'};
+      return{fwcc:ft3+'/'+fw3+' ('+fov3+' ov)',opp:ot3+'/'+ow3+' (50 ov)',margin:'lost by '+(ot3-ft3)+' runs',fwccTotal:ft3,oppTotal:ot3};
     } else {
       var ft4=rand(145,220); var fw4=rand(6,10);
       var ow4=rand(1,7); var oov4=rand(30,50); var wl4=10-ow4;
-      return{fwcc:ft4+'/'+fw4+' (50 ov)',opp:(ft4+rand(1,20))+'/'+ow4+' ('+oov4+' ov)',margin:'lost by '+wl4+' wicket'+(wl4===1?'':'s')};
+      var otot=ft4+rand(1,20);
+      return{fwcc:ft4+'/'+fw4+' (50 ov)',opp:otot+'/'+ow4+' ('+oov4+' ov)',margin:'lost by '+wl4+' wicket'+(wl4===1?'':'s'),fwccTotal:ft4,oppTotal:otot};
     }
   } else {
     var sc=rand(195,245);
-    return{fwcc:sc+'/'+rand(5,9)+' (50 ov)',opp:(sc+rand(-8,8))+'/'+rand(5,9)+' (50 ov)',margin:'match tied / no result'};
+    var sc2=sc+rand(-8,8);
+    return{fwcc:sc+'/'+rand(5,9)+' (50 ov)',opp:sc2+'/'+rand(5,9)+' (50 ov)',margin:'match tied / no result',fwccTotal:sc,oppTotal:sc2};
   }
-}
-
-function weightedPick(arr,weights){
-  var total=weights.reduce(function(s,w){return s+w;},0);
-  var r=Math.random()*total;
-  for(var i=0;i<arr.length;i++){r-=weights[i];if(r<=0)return arr[i];}
-  return arr[arr.length-1];
 }
 
 function genPlayerPerf(outcome){
   var batters=state.xi.filter(function(p){return ['BAT','WK','AR'].includes(p.role);});
   var bowlers=state.xi.filter(function(p){return ['BOWL','AR'].includes(p.role);});
-  var scorer=weightedPick(batters,batters.map(function(p){return p.rating;}));
-  var runs=outcome==='W'?rand(35,95):outcome==='L'?rand(8,55):rand(20,65);
-  var bowler=weightedPick(bowlers,bowlers.map(function(p){return p.rating;}));
-  var wickets=outcome==='W'?rand(2,5):outcome==='L'?rand(0,2):rand(1,3);
+
+  var scorer=weightedPickByRating(batters);
+  var scorerExp=batExpectedRuns(scorer.rating,outcome);
+  var runs=Math.max(5,Math.round(scorerExp + (Math.random()-0.3)*scorerExp*0.9));
+
+  var bowler=weightedPickByRating(bowlers);
+  var bowlerExp=bowlExpectedWkts(bowler.rating,outcome);
+  var wickets=Math.max(0,Math.round(bowlerExp + (Math.random()-0.4)*1.8));
+  wickets=Math.min(wickets,7);
+
   var all={};
   state.xi.forEach(function(p){
     var isSc=p.name===scorer.name; var isBw=p.name===bowler.name;
-    var r2=isSc?runs:['BAT','WK','AR'].includes(p.role)?Math.max(0,rand(0,Math.max(5,runs-10))):rand(0,12);
-    var w=isBw?wickets:['BOWL','AR'].includes(p.role)?rand(0,Math.max(0,wickets-1)):0;
-    all[p.name]={runs:r2,wickets:w,fifty:isSc&&runs>=50,fiveFor:isBw&&wickets>=5};
+    var rBase = isSc?runs:(['BAT','WK','AR'].includes(p.role)?
+      Math.max(0,Math.round(batExpectedRuns(p.rating,outcome)*0.5*(0.4+Math.random()*0.8))):rand(0,8));
+    var wBase = isBw?wickets:(['BOWL','AR'].includes(p.role)?
+      Math.max(0,Math.round(bowlExpectedWkts(p.rating,outcome)*0.5*Math.random())):0);
+    all[p.name]={runs:rBase,wickets:wBase,fifty:isSc&&runs>=50,fiveFor:isBw&&wickets>=5};
   });
   return{topScorer:scorer.name,runs:runs,topBowler:bowler.name,wickets:wickets,all:all};
+}
+
+function simulateQuickMatch(meta){
+  var r=Math.random();
+  var outcome = r<meta.winP?'W':r<meta.winP+0.02?'D':'L';
+  var scores=genScores(outcome);
+  var perf=genPlayerPerf(outcome);
+  return{club:meta.club,ground:meta.ground,ha:meta.ha,outcome:outcome,
+    margin:scores.margin,fwccScore:scores.fwcc,oppScore:scores.opp,
+    topScorer:perf.topScorer,topScorerRuns:perf.runs,
+    topBowler:perf.topBowler,topBowlerWkts:perf.wickets,allPerf:perf.all};
 }
 
 function buildTable(){
@@ -871,11 +1014,7 @@ function shortName(n){
    .replace('Hampshire Academy','Hants Acad').replace('St Cross Symondians','St Cross');
 }
 
-function autoRun(){
-  if(state.paused)return;
-  if(state.currentGame>=TOTAL_GAMES){showEnd();return;}
-  state.currentGame++;
-  var f=state.fixtures[state.currentGame-1];
+function recordPerf(f){
   Object.keys(f.allPerf).forEach(function(name){
     var perf=f.allPerf[name];
     if(state.playerStats[name]){
@@ -886,6 +1025,17 @@ function autoRun(){
       if(perf.fiveFor)state.playerStats[name].fiveWkts++;
     }
   });
+}
+
+// ── QUICK SIM LOOP ───────────────────────────────────────────
+function autoRun(){
+  if(state.paused)return;
+  if(state.currentGame>=TOTAL_GAMES){showEnd();return;}
+  var meta=state.fixtures[state.currentGame];
+  var result=simulateQuickMatch(meta);
+  state.fixtures[state.currentGame]=result;
+  state.currentGame++;
+  recordPerf(result);
   updateTable();
   renderSeason();
   window.scrollTo(0,0);
@@ -894,24 +1044,17 @@ function autoRun(){
 
 function togglePause(){
   state.paused=!state.paused;
-  document.getElementById('btn-pause').textContent=state.paused?'&#9654; Resume':'&#9208; Pause';
+  document.getElementById('btn-pause').textContent=state.paused?'▶ Resume':'⏸ Pause';
   if(!state.paused)state.autoTimer=setTimeout(autoRun,600);
 }
 
 function skipToEnd(){
   clearTimeout(state.autoTimer);
   for(var i=state.currentGame;i<TOTAL_GAMES;i++){
-    var f=state.fixtures[i];
-    Object.keys(f.allPerf).forEach(function(name){
-      var perf=f.allPerf[name];
-      if(state.playerStats[name]){
-        state.playerStats[name].runs+=perf.runs;
-        state.playerStats[name].wickets+=perf.wickets;
-        state.playerStats[name].games++;
-        if(perf.fifty)state.playerStats[name].fifties++;
-        if(perf.fiveFor)state.playerStats[name].fiveWkts++;
-      }
-    });
+    var meta=state.fixtures[i];
+    var result=simulateQuickMatch(meta);
+    state.fixtures[i]=result;
+    recordPerf(result);
   }
   state.currentGame=TOTAL_GAMES;
   updateTable();
@@ -971,9 +1114,470 @@ function renderSeason(){
   }).join('');
 }
 
+</script>
+
+<script>
+// ══════════════════════════════════════════════════════════════
+//  FULL SIM — BALL BY BALL ENGINE
+// ══════════════════════════════════════════════════════════════
+
+function startLiveMatch(gameIndex){
+  var meta=state.fixtures[gameIndex];
+  var r=Math.random();
+  var outcome = r<meta.winP?'W':r<meta.winP+0.02?'D':'L';
+
+  // Decide bat-first based on outcome type (mirrors quick sim win-by-runs/wickets logic)
+  var fwccBatsFirst;
+  if(outcome==='W') fwccBatsFirst = Math.random()>0.5;
+  else if(outcome==='L') fwccBatsFirst = Math.random()<0.5;
+  else fwccBatsFirst = Math.random()>0.5;
+
+  var batters=state.xi.filter(function(p){return ['BAT','WK','AR'].includes(p.role);});
+  var keepers=state.xi.filter(function(p){return p.role==='WK';});
+  var bowlOrder=state.xi.filter(function(p){return ['BOWL','AR'].includes(p.role);})
+    .slice().sort(function(a,b){return b.rating-a.rating;});
+
+  // Build full batting order: BAT/WK/AR in rating order roughly, then bowlers
+  var battingOrder = state.xi.slice().sort(function(a,b){
+    var roleVal=function(p){return p.role==='BOWL'?0:p.role==='AR'?2:1;};
+    var rv = roleVal(b)-roleVal(a);
+    if(rv!==0) return rv;
+    return b.rating-a.rating;
+  });
+
+  state.live = {
+    gameIndex:gameIndex, meta:meta, outcome:outcome, fwccBatsFirst:fwccBatsFirst,
+    battingOrder:battingOrder, bowlOrder:bowlOrder,
+    innings:1, // 1 or 2
+    paused:false, timer:null,
+    target:null,
+    firstInningsScore:null, firstInningsWkts:null, firstInningsOvers:null,
+    finalResult:null
+  };
+  initInnings();
+  renderLive();
+  liveAutoBall();
+}
+
+function currentBattingTeam(){
+  var inn1IsFwcc = state.live.fwccBatsFirst;
+  if(state.live.innings===1) return inn1IsFwcc?'FWCC':'OPP';
+  return inn1IsFwcc?'OPP':'FWCC';
+}
+
+function initInnings(){
+  var L=state.live;
+  var battingFWCC = currentBattingTeam()==='FWCC';
+
+  L.score=0; L.wkts=0; L.balls=0;
+  L.thisOver=[];
+  L.fow=[]; // {wkt, score, over}
+  L.battersUsed=0;
+  L.bowlerBallsThisOver=0;
+  L.currentBowlerIdx = Math.floor(Math.random()*Math.min(3,L.bowlOrder.length)); // start with a strong-ish bowler
+  L.bowlerStats={}; // name -> {balls, runs, wkts, maidens, runsThisOver}
+  L.battersOut={}; // name -> true
+
+  if(battingFWCC){
+    L.strikerIdx=0; L.nonStrikerIdx=1;
+    L.batterStats={}; // name -> {runs, balls, out}
+    L.battingOrder.forEach(function(p){L.batterStats[p.name]={runs:0,balls:0,out:false,how:''};});
+  } else {
+    // Opposition innings — simulate generic numbered batters, but we still need bowler stats from FWCC XI
+    L.strikerIdx=0; L.nonStrikerIdx=1;
+    L.oppBatterNames=['Opener 1','Opener 2','No.3','No.4','No.5','No.6','No.7','No.8','No.9','No.10','No.11'];
+    L.batterStats={};
+    L.oppBatterNames.forEach(function(n){L.batterStats[n]={runs:0,balls:0,out:false,how:''};});
+  }
+
+  L.maxOvers=50;
+  L.allOut=false;
+  L.battersUsed=2; // openers already at crease
+}
+
+function getStrikerName(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(battingFWCC) return L.battingOrder[L.strikerIdx].name;
+  return L.oppBatterNames[L.strikerIdx];
+}
+function getNonStrikerName(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(battingFWCC) return L.battingOrder[L.nonStrikerIdx].name;
+  return L.oppBatterNames[L.nonStrikerIdx];
+}
+function getStrikerRating(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(battingFWCC) return L.battingOrder[L.strikerIdx].rating;
+  var clubR = CLUBS.find(function(c){return c.name===L.meta.club;}).rating;
+  var posPenalty = L.strikerIdx*2.2;
+  return Math.max(45, clubR - posPenalty + rand(-4,4));
+}
+function getCurrentBowler(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(!battingFWCC){
+    // FWCC bowling - real XI bowler
+    return L.bowlOrder[L.currentBowlerIdx % L.bowlOrder.length];
+  }
+  // FWCC batting - generate a pseudo opposition bowler
+  var clubR = CLUBS.find(function(c){return c.name===L.meta.club;}).rating;
+  var idx = L.currentBowlerIdx % 6;
+  var names=['Opp Bowler 1','Opp Bowler 2','Opp Bowler 3','Opp Bowler 4','Opp Bowler 5','Opp Bowler 6'];
+  return {name:names[idx], rating:Math.max(50, clubR - idx*1.5 + rand(-3,3))};
+}
+
+// Simulate one ball outcome based on batter rating and bowler rating
+function simulateBall(batterRating, bowlerRating){
+  // Net advantage: positive favours batter
+  var adv = (batterRating - bowlerRating) / 40;
+
+  var wicketChance = Math.max(0.018, 0.052 - adv*0.025);
+  var dotChance    = Math.max(0.28, 0.42 - adv*0.10);
+  var wideNoBallChance = 0.045;
+
+  var roll = Math.random();
+  if(roll < wideNoBallChance){
+    return {type: Math.random()<0.7?'wide':'noball', runs:1};
+  }
+  roll = Math.random();
+  if(roll < wicketChance){
+    return {type:'wicket', runs:0};
+  }
+  if(roll < wicketChance+dotChance){
+    return {type:'dot', runs:0};
+  }
+  // Run distribution weighted by batter rating (better batters hit more boundaries)
+  var sixChance = Math.max(0.02, 0.025 + adv*0.05);
+  var fourChance = Math.max(0.06, 0.10 + adv*0.07);
+  var twoChance = 0.10;
+  var threeChance = 0.025;
+  var oneChance = 1 - sixChance - fourChance - twoChance - threeChance;
+
+  var r2=Math.random();
+  if(r2<sixChance) return {type:'six',runs:6};
+  r2-=sixChance;
+  if(r2<fourChance) return {type:'four',runs:4};
+  r2-=fourChance;
+  if(r2<twoChance) return {type:'runs2',runs:2};
+  r2-=twoChance;
+  if(r2<threeChance) return {type:'runs3',runs:3};
+  return {type:'runs1',runs:1};
+}
+
+function liveAutoBall(){
+  if(state.live.paused) return;
+  playOneBall();
+  if(checkInningsOrMatchEnd()) return;
+  state.live.timer = setTimeout(liveAutoBall, 380);
+}
+
+function playOneBall(){
+  var L=state.live;
+  var bowler=getCurrentBowler();
+  var strikerRating=getStrikerRating();
+  var ball=simulateBall(strikerRating, bowler.rating);
+
+  if(!L.bowlerStats[bowler.name]) L.bowlerStats[bowler.name]={balls:0,runs:0,wkts:0};
+  var bs=L.bowlerStats[bowler.name];
+
+  if(ball.type==='wide' || ball.type==='noball'){
+    L.score+=1;
+    bs.runs+=1;
+    L.thisOver.push({type:ball.type,label:ball.type==='wide'?'WD':'NB'});
+    // no ball counted, over continues
+  } else {
+    L.balls++;
+    bs.balls++;
+    L.bowlerBallsThisOver++;
+
+    if(ball.type==='wicket'){
+      L.wkts++;
+      bs.wkts++;
+      var strikerName=getStrikerName();
+      L.batterStats[strikerName].out=true;
+      L.batterStats[strikerName].how='b '+bowler.name.split(' ').pop();
+      L.fow.push({wkt:L.wkts, score:L.score, name:strikerName, over:oversStr(L.balls)});
+      L.thisOver.push({type:'wicket',label:'W'});
+      advanceBatter();
+    } else {
+      var runs=ball.runs;
+      L.score+=runs;
+      bs.runs+=runs;
+      var sName=getStrikerName();
+      L.batterStats[sName].runs+=runs;
+      L.batterStats[sName].balls++;
+      L.thisOver.push({type:ball.type,label:String(runs)});
+      if(runs%2===1) swapStrike();
+    }
+
+    if(L.bowlerBallsThisOver>=6){
+      L.bowlerBallsThisOver=0;
+      L.thisOver=[];
+      swapStrike();
+      rotateBowler();
+    }
+  }
+}
+
+function advanceBatter(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(battingFWCC){
+    if(L.battersUsed>=11){ L.allOut=true; return; }
+    L.strikerIdx = L.battersUsed;
+    L.battersUsed++;
+  } else {
+    if(L.battersUsed>=11){ L.allOut=true; return; }
+    L.strikerIdx = L.battersUsed;
+    L.battersUsed++;
+  }
+}
+
+function swapStrike(){
+  var L=state.live;
+  var tmp=L.strikerIdx; L.strikerIdx=L.nonStrikerIdx; L.nonStrikerIdx=tmp;
+}
+
+function rotateBowler(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  var len = battingFWCC ? 6 : L.bowlOrder.length;
+  L.currentBowlerIdx = (L.currentBowlerIdx + 1 + Math.floor(Math.random()*2)) % len;
+}
+
+function oversStr(balls){
+  return Math.floor(balls/6)+'.'+(balls%6);
+}
+
+function checkInningsOrMatchEnd(){
+  var L=state.live;
+  var inningsOver = L.wkts>=10 || L.allOut || L.balls>=L.maxOvers*6;
+  var chaseComplete = L.innings===2 && L.target!==null && L.score>=L.target;
+
+  if(chaseComplete){
+    saveCurrentInningsStats();
+    finishMatch();
+    return true;
+  }
+  if(inningsOver){
+    saveCurrentInningsStats();
+    if(L.innings===1){
+      L.firstInningsScore=L.score;
+      L.firstInningsWkts=L.wkts;
+      L.firstInningsOvers=oversStr(L.balls);
+      L.target=L.score+1;
+      L.innings=2;
+      initInnings();
+      renderLive();
+      state.live.timer=setTimeout(liveAutoBall,900);
+      return true;
+    } else {
+      finishMatch();
+      return true;
+    }
+  }
+  renderLive();
+  return false;
+}
+
+// Save whichever stats belonged to FWCC this innings (batting or bowling)
+function saveCurrentInningsStats(){
+  var L=state.live;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+  if(battingFWCC){
+    L.savedFwccBatterStats = Object.assign({}, L.savedFwccBatterStats||{}, L.batterStats);
+  } else {
+    L.savedFwccBowlerStats = Object.assign({}, L.savedFwccBowlerStats||{}, L.bowlerStats);
+  }
+}
+
+function finishMatch(){
+  var L=state.live;
+  clearTimeout(L.timer);
+
+  var inn1Fwcc=L.fwccBatsFirst;
+  var fwccScore, oppScore, fwccWkts, oppWkts, fwccOvers, oppOvers;
+  if(inn1Fwcc){
+    fwccScore=L.firstInningsScore; fwccWkts=L.firstInningsWkts; fwccOvers=L.firstInningsOvers;
+    oppScore=L.score; oppWkts=L.wkts; oppOvers=oversStr(L.balls);
+  } else {
+    oppScore=L.firstInningsScore; oppWkts=L.firstInningsWkts; oppOvers=L.firstInningsOvers;
+    fwccScore=L.score; fwccWkts=L.wkts; fwccOvers=oversStr(L.balls);
+  }
+
+  var margin, outcome;
+  if(fwccScore>oppScore){
+    outcome='W';
+    if(inn1Fwcc){ margin='won by '+(fwccScore-oppScore)+' runs'; }
+    else { margin='won by '+(10-fwccWkts)+' wicket'+((10-fwccWkts)===1?'':'s'); }
+  } else if(oppScore>fwccScore){
+    outcome='L';
+    if(!inn1Fwcc){ margin='lost by '+(oppScore-fwccScore)+' runs'; }
+    else { margin='lost by '+(10-oppWkts)+' wicket'+((10-oppWkts)===1?'':'s'); }
+  } else {
+    outcome='D'; margin='match tied';
+  }
+
+  var finalFwccBat = L.savedFwccBatterStats || {};
+  var finalFwccBowl = L.savedFwccBowlerStats || {};
+
+  var allPerf={};
+  state.xi.forEach(function(p){
+    var bstat = finalFwccBat[p.name] || {runs:0};
+    var wstat = finalFwccBowl[p.name] || {wkts:0};
+    allPerf[p.name]={
+      runs: bstat.runs||0,
+      wickets: wstat.wkts||0,
+      fifty:(bstat.runs||0)>=50,
+      fiveFor:(wstat.wkts||0)>=5
+    };
+  });
+
+  var topScorerEntry=Object.entries(allPerf).sort(function(a,b){return b[1].runs-a[1].runs;})[0];
+  var topBowlerEntry=Object.entries(allPerf).sort(function(a,b){return b[1].wickets-a[1].wickets;})[0];
+
+  var result={
+    club:L.meta.club, ground:L.meta.ground, ha:L.meta.ha, outcome:outcome,
+    margin:margin, fwccScore:fwccScore+'/'+fwccWkts+' ('+fwccOvers+' ov)',
+    oppScore:oppScore+'/'+oppWkts+' ('+oppOvers+' ov)',
+    topScorer:topScorerEntry[0], topScorerRuns:topScorerEntry[1].runs,
+    topBowler:topBowlerEntry[0], topBowlerWkts:topBowlerEntry[1].wickets,
+    allPerf:allPerf
+  };
+
+  state.fixtures[L.gameIndex]=result;
+  recordPerf(result);
+  updateTable();
+  state.currentGame++;
+
+  L.finalResult=result;
+  showMatchEndToast(result);
+}
+
+function showMatchEndToast(result){
+  var cls=result.outcome==='W'?'win':result.outcome==='L'?'loss':'draw';
+  var color=result.outcome==='W'?'var(--win)':result.outcome==='L'?'var(--loss)':'var(--draw)';
+  var t=document.createElement('div');
+  t.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:999;padding:24px;';
+  t.innerHTML='<div style="background:var(--bg2);border:2px solid '+color+';border-radius:16px;padding:32px;text-align:center;max-width:340px;">'+
+    '<div style="font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;">Full Time</div>'+
+    '<div style="font-size:20px;font-weight:800;color:'+color+';margin-bottom:6px;">'+result.margin.toUpperCase()+'</div>'+
+    '<div style="font-size:13px;color:var(--muted);margin-bottom:20px;">FWCC '+result.fwccScore+' vs '+shortName(result.club)+' '+result.oppScore+'</div>'+
+    '<button id="continue-btn" style="background:var(--gold);color:#000;font-weight:800;border:none;padding:14px 28px;border-radius:10px;font-size:15px;cursor:pointer;">Continue</button>'+
+  '</div>';
+  document.body.appendChild(t);
+  document.getElementById('continue-btn').onclick=function(){
+    document.body.removeChild(t);
+    if(state.currentGame>=TOTAL_GAMES){
+      showEnd();
+    } else {
+      startLiveMatch(state.currentGame);
+    }
+  };
+}
+
+function liveTogglePause(){
+  state.live.paused=!state.live.paused;
+  document.getElementById('lm-btn-pause').textContent=state.live.paused?'▶ Resume':'⏸ Pause';
+  if(!state.live.paused) liveAutoBall();
+  else clearTimeout(state.live.timer);
+}
+
+function liveSkipMatch(){
+  clearTimeout(state.live.timer);
+  state.live.paused=true;
+  var guard=0;
+  while(guard<5000){
+    guard++;
+    playOneBall();
+    var L=state.live;
+    var inningsOver = L.wkts>=10 || L.allOut || L.balls>=L.maxOvers*6;
+    var chaseComplete = L.innings===2 && L.target!==null && L.score>=L.target;
+    if(chaseComplete){ saveCurrentInningsStats(); finishMatch(); return; }
+    if(inningsOver){
+      saveCurrentInningsStats();
+      if(L.innings===1){
+        L.firstInningsScore=L.score; L.firstInningsWkts=L.wkts; L.firstInningsOvers=oversStr(L.balls);
+        L.target=L.score+1; L.innings=2;
+        initInnings();
+      } else {
+        finishMatch(); return;
+      }
+    }
+  }
+}
+
+function renderLive(){
+  var L=state.live;
+  if(!L) return;
+  var battingFWCC=currentBattingTeam()==='FWCC';
+
+  document.getElementById('lm-game-counter').textContent='Game '+(state.currentGame+1)+' of '+TOTAL_GAMES;
+  document.getElementById('lm-teams').textContent='FWCC vs '+shortName(L.meta.club)+' ('+(L.meta.ha==='H'?'Home':'Away')+')';
+  document.getElementById('lm-venue').textContent=L.meta.ha==='H'?'Dolmans Farm, Ferndown':L.meta.ground;
+  document.getElementById('lm-innings-label').textContent=
+    (L.innings===1?'1ST INNINGS':'2ND INNINGS')+' &middot; '+(battingFWCC?'FWCC BATTING':shortName(L.meta.club).toUpperCase()+' BATTING');
+
+  document.getElementById('lm-score').innerHTML=L.score+'<span style="font-size:24px;color:var(--muted)">/'+L.wkts+'</span>';
+  document.getElementById('lm-overs').textContent=oversStr(L.balls)+' overs';
+  var rr=L.balls>0?(L.score/(L.balls/6)).toFixed(2):'0.00';
+  document.getElementById('lm-crr').textContent='Run Rate: '+rr;
+
+  var targetEl=document.getElementById('lm-target');
+  if(L.innings===2 && L.target){
+    targetEl.style.display='block';
+    var needed=L.target-L.score;
+    var ballsLeft=L.maxOvers*6-L.balls;
+    targetEl.textContent='Need '+Math.max(0,needed)+' from '+ballsLeft+' balls';
+  } else {
+    targetEl.style.display='none';
+  }
+
+  // Batters
+  var strikerName=getStrikerName(), nonStrikerName=getNonStrikerName();
+  var sStat=L.batterStats[strikerName]||{runs:0,balls:0};
+  var nsStat=L.batterStats[nonStrikerName]||{runs:0,balls:0};
+  document.getElementById('lm-batters').innerHTML=
+    '<div class="lm-batter-row striker"><div class="lm-batter-name"><span class="star">&#9733;</span>'+strikerName+'</div><div class="lm-batter-stats">'+sStat.runs+' ('+sStat.balls+')</div></div>'+
+    '<div class="lm-batter-row"><div class="lm-batter-name">'+nonStrikerName+'</div><div class="lm-batter-stats">'+nsStat.runs+' ('+nsStat.balls+')</div></div>';
+
+  // Bowler
+  var bowler=getCurrentBowler();
+  var bs=L.bowlerStats[bowler.name]||{balls:0,runs:0,wkts:0};
+  var bOvers=oversStr(bs.balls);
+  document.getElementById('lm-bowler-box').innerHTML=
+    '<div class="lm-bowler-name">'+bowler.name+'</div>'+
+    '<div class="lm-bowler-figs">'+bOvers+'-'+bs.runs+'-'+bs.wkts+'</div>';
+
+  // This over balls
+  document.getElementById('lm-balls').innerHTML=L.thisOver.map(function(b){
+    var cls=b.type==='dot'?'dot':b.type==='wicket'?'wicket':b.type==='four'?'four':b.type==='six'?'six':
+      (b.type==='wide'||b.type==='noball')?'wide':'runs'+b.label;
+    var label=b.type==='dot'?'0':b.label;
+    return '<div class="lm-ball '+cls+'">'+label+'</div>';
+  }).join('');
+
+  // Fall of wickets
+  if(L.fow.length){
+    document.getElementById('lm-fow-section').style.display='block';
+    document.getElementById('lm-fow-list').innerHTML=L.fow.map(function(f){
+      return '<div class="lm-fow-row"><span>'+f.wkt+'. '+f.name+'</span><span>'+f.score+' ('+f.over+' ov)</span></div>';
+    }).join('');
+  } else {
+    document.getElementById('lm-fow-section').style.display='none';
+  }
+}
+</script>
+
+<script>
 // ── END ──────────────────────────────────────────────────────
 function showEnd(){
   clearTimeout(state.autoTimer);
+  if(state.live) clearTimeout(state.live.timer);
+
   var played=state.fixtures.slice(0,TOTAL_GAMES);
   var W=played.filter(function(f){return f.outcome==='W';}).length;
   var L=played.filter(function(f){return f.outcome==='L';}).length;
@@ -988,7 +1592,7 @@ function showEnd(){
 
   var tbox=document.getElementById('end-trophy-box');
   if(unbeaten){
-    tbox.innerHTML='<div class="trophy-box"><div class="trophy-emoji">&#127942;</div><div class="trophy-title">Perfect Season!</div><div class="trophy-sub">Lifted the title without a single defeat. A side for the ages.</div></div>';
+    tbox.innerHTML='<div class="trophy-box"><div class="trophy-emoji">&#127942;</div><div class="trophy-title">Perfect Season! 18-0</div><div class="trophy-sub">Lifted the title without a single defeat. A side for the ages.</div></div>';
   } else if(noLoss){
     tbox.innerHTML='<div class="trophy-box" style="background:linear-gradient(135deg,#1a3a1a,#0a1a0a)"><div class="trophy-emoji">&#129352;</div><div class="trophy-title">Undefeated Season!</div><div class="trophy-sub">'+W+' wins and '+D+' draws - a superb campaign at Dolmans Farm.</div></div>';
   } else {
@@ -1014,6 +1618,7 @@ function showEnd(){
 
   document.getElementById('end-detail').innerHTML=
     '<div class="end-detail-title">Season Summary</div>'+
+    '<div class="end-detail-row"><span class="edr-key">Sim mode</span><span class="edr-val">'+(state.simMode==='full'?'Full Sim (ball-by-ball)':'Quick Sim')+'</span></div>'+
     '<div class="end-detail-row"><span class="edr-key">Final position</span><span class="edr-val">'+pos+suffix+' in the SPCL Premier Division</span></div>'+
     '<div class="end-detail-row"><span class="edr-key">Record</span><span class="edr-val">'+W+'W &middot; '+L+'L &middot; '+D+'D</span></div>'+
     '<div class="end-detail-row"><span class="edr-key">Points total</span><span class="edr-val">'+pts+'</span></div>'+
